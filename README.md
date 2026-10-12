@@ -96,18 +96,4 @@ lib/
 The optimization solves one nonlinear problem per pixel, so a full-resolution image set can
 take several hours. Set `cfg.reuse_estimates = true` in `main.m` to redraw the figures and
 statistics from saved estimates without running it again.
-
-## Correspondence with the original scripts
-
-| Original | Here |
-|---|---|
-| `preprocess.m` | `lib/preprocess_raw_captures.m`, called by `lib/load_image_set.m` |
-| `etalonnage.m`, `Tools/Radiance_calib.m` (`main_mask`) | `main.m` (step 1), `lib/reflectometric_calibration.m` |
-| `polyfitn` / `polyvaln` (File Exchange), order 2 | `lib/fit_poly2_surface.m` |
-| `main.m`, `runall_reflecto_paper.m` | `main.m` |
-| `estimation_oren_nayar_fmincon.m` | `lib/eon_photometric_stereo.m` |
-| `obj_EON.m`, `optim_constraints_normals.m` | `lib/eon_objective.m`, `lib/unit_normal_constraint.m` |
-| `oren_nayar_brdf.m`, `oren_nayar_EC_term.m`, `oren_nayar_brdf_full.m`, `oren_nayar_G.m` | `lib/fon_brdf.m`, `lib/eon_ms_brdf.m`, `lib/eon_brdf.m`, `lib/fon_G.m` |
-| `oren_nayar_albedo.m`, `oren_nayar_EC_albedo.m`, `EON_albedo.m` | `lib/fon_albedo.m`, `lib/eon_ms_albedo.m`, `lib/eon_albedo.m` |
-| `calib_display.m` | `lib/plot_calibration.m`, `lib/plot_calibration_spectral.m` |
 | `Results_reflecto-paper-4/plot_EON_brdf.m` | `lib/plot_eon_brdf_polar.m` |
