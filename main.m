@@ -87,16 +87,8 @@ for k = 1:numel(wavelengths)
     runs(end).light_distances = 'light_distances.mat';
     runs(end).light_sources    = [];
     runs(end).ps_sets          = {[w '_calib'], [w '_spectralon_50'], ...
-                                  [w '_spectralon_20'], [w '_flat'], [w '_sphere']};
+                                  [w '_spectralon_20']};
 end
-
-% Image sets acquired in another session (other light positions) need a run of
-% their own, with their own calibration images and light directions, e.g.:
-% runs(end+1).wavelength_nm  = 450;
-% runs(end).calibration_set  = 'session2_450nm_calib';
-% runs(end).light_directions = 'session2_light_directions.mat';
-% runs(end).light_sources    = [];
-% runs(end).ps_sets          = {'450nm_flatdark', '450nm_spheredark'};
 
 %% Check that every input exists before starting (the optimisation is long)
 missing = {};
