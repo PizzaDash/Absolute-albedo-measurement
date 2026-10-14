@@ -1,6 +1,6 @@
-# Absolute albedo calibration for Photometric Stereo
+# Absolute albedo measurement with Photometric Stereo
 
-MATLAB code for the paper *Absolute albedo calibration for Photometric Stereo*
+MATLAB code for the paper *Absolute albedo measurement with Photometric Stereo*
 (T. Fevrier, J. Delpech, T. Sentenac, Y. Quéau, F. Bugarin).
 
 Photometric stereo (PS) usually recovers the albedo only up to an unknown scale factor, the
