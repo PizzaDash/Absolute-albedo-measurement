@@ -86,9 +86,8 @@ for k = 1:numel(wavelengths)
     runs(end).light_directions = 'light_directions.mat';
     runs(end).light_distances = 'light_distances.mat';
     runs(end).light_sources    = [];
-    % runs(end).ps_sets          = {[w '_spectralon_99'], [w '_spectralon_50'], ...
-    %                               [w '_spectralon_20'], [w '_flat'], [w '_sphere']};
-    runs(end).ps_sets          = {[w '_flat']};
+    runs(end).ps_sets          = {[w '_calib'], [w '_spectralon_50'], ...
+                                  [w '_spectralon_20'], [w '_flat'], [w '_sphere']};
 end
 
 % Image sets acquired in another session (other light positions) need a run of
