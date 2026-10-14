@@ -1,4 +1,4 @@
-%% Physically accurate albedo calibration for Photometric Stereo
+%% Absolute albedo measurement for Photometric Stereo
 % Main script: reflectometric calibration followed by photometric stereo
 % (PS) with the Energy-preserving Oren-Nayar (EON) model, as described in
 %
