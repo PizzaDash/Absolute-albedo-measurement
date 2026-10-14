@@ -1,6 +1,6 @@
-# Physically accurate albedo calibration for Photometric Stereo
+# Absolute albedo calibration for Photometric Stereo
 
-MATLAB code for the paper *Physically accurate albedo calibration for Photometric Stereo*
+MATLAB code for the paper *Absolute albedo calibration for Photometric Stereo*
 (T. Fevrier, J. Delpech, T. Sentenac, Y. Quéau, F. Bugarin).
 
 Photometric stereo (PS) usually recovers the albedo only up to an unknown scale factor, the
