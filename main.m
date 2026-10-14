@@ -3,7 +3,7 @@
 % (PS) with the Energy-preserving Oren-Nayar (EON) model, as described in
 %
 %   T. Fevrier, J. Delpech, T. Sentenac, Y. Queau, F. Bugarin,
-%   "Physically accurate albedo calibration for Photometric Stereo".
+%   "Absolute albedo measurement for Photometric Stereo".
 %
 % For each acquisition run (one wavelength, one set of light positions) the
 % script:
